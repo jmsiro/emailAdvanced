@@ -3,14 +3,14 @@
   "description": "Módulo con opciones avanzadas para el manejo de correos",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
   "license": "MIT",
-  "homepage": "http://rocketbot.cl",
+  "homepage": "http://rocketbot.com",
   "linux": true,
   "windows": true,
   "mac": true,
   "docker": true,
   "type": "module",
   "name": "emailAdvanced",
-  "version": "3.2",
+  "version": "3.3.0",
   "title": {
     "en": "Email avanzado",
     "es": "Email avanzado",
@@ -260,6 +260,7 @@
         "inputs": [
           {
             "type": "input",
+            "placeholder": "ID",
             "title": {
               "es": "ID de mail",
               "en": "ID de mail",
@@ -290,6 +291,7 @@
           },
           {
             "type": "folder_select",
+            "placeholder": "C:/Users/User/Desktop",
             "title": {
               "es": "Ruta guardar email",
               "en": "Email save path",
@@ -304,6 +306,7 @@
           },
           {
             "type": "folder_select",
+            "placeholder": "C:/Users/User/Desktop",
             "title": {
               "es": "Ruta donde se descargaran los adjuntos",
               "en": "Attachment save path",
@@ -345,6 +348,11 @@
         "inputs": [
           {
             "type": "input",
+            "placeholder": {
+              "es": "ID",
+              "en": "ID",
+              "cn": "ID"
+            },
             "title": {
               "es": "ID de mail",
               "en": "ID de mail",
@@ -386,6 +394,10 @@
         "inputs": [
           {
             "type": "input",
+            "placeholder": {
+              "es": "Variable",
+              "en": "Variable"
+            },
             "title": {
               "es": "Asignar a variable",
               "en": "Set to var"
@@ -506,8 +518,8 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "True",
+              "en": "True"
             },
             "title": {
               "es": "Conexión SSL",
@@ -628,8 +640,8 @@
           {
             "type": "checkbox",
             "placeholder": {
-              "es": "",
-              "en": ""
+              "es": "True",
+              "en": "True"
             },
             "title": {
               "es": "Conexión SSL",
